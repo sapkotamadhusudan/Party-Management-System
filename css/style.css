@@ -1,0 +1,206 @@
+html,body { background: #FFFFFF; font-family: Roboto, sans-serif; font-size: 16px; height: 100%; margin: 0px; padding: 0px;}
+.wrapper { position: relative; height: 100%; margin: 0px; padding: 0px;}
+header   { position: relative; height:200px; width: 100%; background: #6d777c; margin: 0px;
+           background:#eee url(banner.jpg) no-repeat center; background-size:cover;}
+/*white- #F3F3F3 /light black- #6d777c*/
+.content { position: relative; min-height:calc(100% - 315px); width: 100%; background: #FFFFFF; margin: 0px; 
+            padding: 0; overflow: hidden; display: block;}  /*light blue-  #3C8DBC */
+
+
+
+
+#popUpBooking, #childrenInfo { position: relative; top: 20%; left: 35%; width: 400px; min-height: 60%; padding: 16px; background-color: white; 
+                z-index: 1002; overflow: auto; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+#popUpBooking {display: none;}
+#childrenInfo {display: none;}
+#blackPart { height: 0px; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.6); 
+            overflow-x: hidden; transition: 0.5s;}
+
+#popUpBooking .closeButton { padding: 8px; text-decoration: none; font-size: 16px; color: black; display: block; transition: 0.3s; position: absolute; top: 1px; right: 10px; font-size: 40px;}
+#childrenInfo .closeButton { padding: 8px; text-decoration: none; font-size: 16px; color: black; display: block; transition: 0.3s; position: absolute; top: 1px; right: 10px; font-size: 40px;}
+
+#popUpBooking .closeButton:hover, .closeButton:focus { color: #6aa8cc; }
+#childrenInfo  .closeButton:hover, .closeButton:focus { color: #6aa8cc; }
+
+#bookingContent , #childrenInfoContent { position: relative; width: 300px; margin: 10px 0 0 10px; padding: 10px 0 0 30px;}
+
+    #bookingForm #childNo ,#bookingForm #cost
+    { font-size: 14px; background: #f2f2f2; margin: 0 0 10px; padding: 10px; 
+      width: 100%; box-sizing: border-box; border: 3px solid #ccc; outline: none; height: 30px;}
+
+    #bookingForm .opt,  #bookingForm #check { width: 23%; height: 30px; border: 3px solid #ccc; margin: 0; padding: 0; }
+
+    #bookingForm #childNo:focus , #bookingForm #cost:focus, #bookingForm .opt:focus { border: 3px solid #555; }
+
+    #next, #prev, #add_dob, .remove_dob {
+          font-family: "Roboto", sans-serif; font-size: 12px; text-transform: uppercase; outline: 0; background: #3C8DBC; border-radius: 2px;
+          height: 30px; border: 0; color: #FFFFFF;cursor: pointer; border: 1px solid #3C8DBC;}
+
+    #next:hover, #prev:hover, #mail:hover, #add_dob:hover, .remove_dob:hover { background: #6aa8cc; border: 1px solid #6aa8cc;}
+    #next:active, #prev:active, #mail:active, #add_dob:active, .remove_dob:active {border: 1px solid #555; }
+
+#childDOB div {margin: 10px 0 0 5px;}
+
+.dob { width: 150px; height: 30px; background: #f2f2f2; box-sizing: border-box; border: 3px solid #ccc; }
+
+#childBtn {  text-transform: uppercase; outline: 0; background: #3C8DBC; border-radius: 2px; border: 1px solid #3C8DBC;
+          height: 30px; width: 80px; padding: 0; float: right; border: 0; color: #FFFFFF; }
+
+#skipEvent {text-transform: uppercase; text-decoration:none; outline: 0; background: #3C8DBC; border-radius: 2px; border: 1px solid #3C8DBC;
+          height: 30px; width: 80px; padding: 0; float: left; border: 0; color: #FFFFFF; text-align: center; line-height: 30px;}
+
+#childrenInfoContent h2 { color: #6aa8cc; }
+
+
+
+
+#navc {background: rgba(0,0,0,.6); height: 136px; }
+.login_info { float: left; width: 100%; height: 30px;}
+.login_info .loginRe{ float: right; margin: 2px 5px 2px 0px; text-decoration: none; color: #ECF0F5; background: #3C8DBC; 
+               border-radius: 2px; text-align:center; height: 27px; min-width: 80px; display: inline-block; 
+               vertical-align: middle; line-height: 27px; position: relative;}
+.login_info .loginRe:hover { background:#6aa8cc; color:#000; }
+.login_info .loginRe:visited { background:#3C8DBC; }
+.login_info .loginRe:active { background:#6aa8cc; }
+
+header .logo #logo{ display: block; width: 154px; height: 70px; background: url(logo.png) no-repeat 0 0; 
+                background-size: contain; z-index: 1; margin: 0 0 0 50px;}
+.logo { float: left; height: 70px; width: 100%;}
+
+nav { float: left; height: 35px; width: 80%; margin-left: 180px;}
+nav ul  {height: 35px; margin: 0px; padding: 0px;}
+nav ul li { list-style: none; display: block;}
+/*nav ul::after { content:''; display: block; clear: both; }*/
+nav ul li a:hover, a:visited { background: #a7b6bc;}
+nav ul li:hover > ul { display:block; }
+
+nav ul li a { display:inline-block; color:#fff; padding: 10px 20px; text-decoration: none; width: 125px;}
+nav ul li a:hover { background-color:#339999; }
+
+/*Top level*/
+nav > ul { padding-left:0px; }
+nav ul > li { float: left; }
+nav > ul > li > a { padding: 10px 20px 5px 20px; width:auto; }
+
+#login-form {width: 360px; }
+#register-form {width: 400px; }
+
+p  .message {color: red;}
+
+.form { float: left; background: #FFFFFF; margin: 50px 50px; padding: 30px; 
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);  overflow: auto;}
+
+.form #fname, #email, #username, #password, #phone, #no_of_child, #products, #desc,input[type='text'] 
+      { font-size: 14px; background: #f2f2f2; margin: 0 0 10px;padding: 10px; width: 100%; box-sizing: border-box; 
+        border: 3px solid #ccc; outline: none; height: 30px;}
+
+.form #products, #desc {height: 80px; resize: vertical;}
+
+.form #fname:focus, #email:focus, #username:focus, #password:focus, #phone:focus, #no_of_child:focus, 
+#products:focus, #desc:focus, input[type='text']:focus { border: 3px solid #555;}
+
+.form #gender { 
+        font-family: "Roboto", sans-serif; font-size: 14px; outline: 0; background: #f2f2f2; width: 10%; border: 0;
+        margin: 0 0 10px; padding: 10px; box-sizing: border-box; }
+
+.form .register, input[type='submit'], [type='reset'] {
+      font-family: "Roboto", sans-serif; font-size: 14px; text-transform: uppercase; outline: 0; background: #3C8DBC; 
+      width: 40%; border: 0; padding: 15px; margin-right:15px; color: #FFFFFF;cursor: pointer; border: 1px solid #3C8DBC;}
+
+.form .register:hover, input[type='submit']:hover, [type='reset']:hover { background: #6aa8cc; border: 1px solid #6aa8cc;}
+.form .register:active, input[type='submit']:active, [type='reset']:active {border: 1px solid #555; }
+/*.form input[type='submit']:focus, [type='reset']:focus,*/
+#warnU { width: 100%; display: block; }
+
+
+.form .links_message { margin: 15px 0 0; color: #b3b3b3; font-size: 12px; }
+.form .links_message a { color: #3C8DBC; text-decoration: none; }
+.form fieldset {border: none;}
+
+/*////////////////// admin panel css /////////////////////////*/
+.parties, .party_heading { width: 95%; margin: 10px 20px 0px 20px;}
+
+.parties table td { border-bottom: 3px solid #3C8DBC; }
+.parties table th { border-bottom: 3px solid #3C8DBC; }
+.parties table td { text-align: center; }
+
+.p_img { position: relative; display: inline-block; }
+
+.party_image { visibility: hidden; width: 120px; background-color: #555; color: #fff;text-align: center;
+               border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; bottom: 125%; left: 50%;
+               margin-left: -60px; opacity: 0; transition: opacity 1s; }
+
+
+/*////////////////// normal user panel css /////////////////////////*/
+#contentHeader { width: 100%; height: 50px; }
+#currencyForm {float: right; margin: 10px 20px 0 0; }
+
+.parties_list {width: 100%; margin: 0; padding: 0; }
+#bookedDate td { text-align: center; }
+.one_party { float: left; width: 100%; height: 500px; margin: 0; padding: 5px; }
+.party_details { float: left; width: 53%; height: 500px; }
+.party_details .pd {padding: 80px 10px 10px 30px;}
+.pd p {padding-bottom: 20px;}
+.pd .party_head {color: #3C8DBC;}
+
+.pd #book_btn button { margin: 2px 150px 5px 0px; border: none; color: #ECF0F5; background: #3C8DBC; 
+                  border-radius: 2px; text-align: center; width:70px; height: 27px; display: inline-block; 
+                  vertical-align: middle; line-height: 27px; float: right;}
+.pd #book_btn button:hover { background:#6aa8cc; color:#000; }
+.pd #book_btn button:visited { background:#3C8DBC; }
+.pd #book_btn button:active { background:#86c4e8; }
+
+.party_image1 { float: left; width: 40%; border-left: 2px solid #3C8DBC;}
+.party_image1 img {width: 100%; height: 300px; margin: 60px 10px}
+.party_image1 p {margin: 0; padding-left:10px ;}
+
+
+
+/*////////////////// calendar css /////////////////////////*/
+.calendar-table { border-collapse: collapse; font-size: 16px; border-radius: 2px;
+        float: left; background: #FFFFFF; margin: 50px 50px; padding: 30px; 
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);}
+
+.calendar-table th { height: 40px; background: #1B3640; color: white; } /* border-bottom: 1px solid #FAFAFA;*/
+
+.calendar-table th form {margin: 0; padding: 0; width: 100%; height: 100%;}
+.btn {width: 50px; height: 30px; margin: 7px 0 10px 0; background: #40A5DC; border-radius: 2px; 
+      border: none; color: white;}
+.btn:hover { background-color: #68bbe8; }
+.btn:disabled {background-color: #dddddd;}
+
+#dayHeader { background: #E2E2E2; } 
+
+.calendar-table td { width: 65px; height: 50px; text-align: center; vertical-align: middle; }
+.othersMonthDay { color: #dddddd; }
+.bookedDay { background: #40A5DC; border-radius: 5px;}
+
+/*////////////////// end calendar css /////////////////////////*/
+
+
+/*////////////////// dropdown for logout and profile edit css /////////////////////////*/
+.login_info .dropList {float: right;}
+
+.dropListbtn { float: right; margin: 2px 5px 2px 0px; color: #ECF0F5; background: #3C8DBC; border: none;
+               border-radius: 2px; text-align: center; height: 27px; min-width: 120px; display: inline-block; 
+               vertical-align: middle; line-height: 27px; position: relative; font-size: 16px;}
+.dropListbtn:hover { background:#6aa8cc; color:#000; }
+.dropListbtn:visited { background:#3C8DBC; }
+.dropListbtn:active { background:#6aa8cc; }
+
+.dropList { position: relative; display: inline-block; }
+
+.dropdownLists { display: none; position: absolute; top: 30px; right: 0px; background-color: #f9f9f9; min-width: 120px; 
+                 overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; margin-right: 5px;}
+
+.dropdownLists .dropa { color: black; padding: 7px 7px; text-decoration: none; display: block; font-size: 14px;}
+
+.dropList .dropa:hover { background:#6aa8cc; color:#000; }
+.dropList .dropa:active  { background:#3C8DBC; }
+
+.showDropList {display:block;}
+
+
+/*////////////////// end dropdown for logout and profile edit css /////////////////////////*/
+footer   { position: relative; height:100px;  width: 100%; background: #242729; }
+footer p {color: #FFFFFF; padding: 15px 0px 0px 10px;}
